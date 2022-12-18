@@ -8,8 +8,11 @@ const Main = () => {
       <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'>
         <div>
           <p className='uppercase text-sm tracking-widest text-gray-600'>LET&apos;S BUILD SOMETHING TOGETHER</p>
-          <h1 className='py-4 text-gray-700'>Hi, I&apos;m <span className='text-[#5651e5]'>Abdelmejid</span></h1>
-          <h2 className='py-2 text-gray-700'>A Full-Stack Web Developer</h2>
+          <h1 className='py-4 text-gray-700'>
+            Hi, I&apos;m <span className='text-[#5651e5]'>Abdelmejid</span><br/>
+            A Full-Stack Web Developer
+          </h1>
+          <h2 className='py-2 text-gray-700'></h2>
           <p className='py-4 text-gray-600 max-w-[70%] m-auto'>
 
           </p>
