@@ -1,5 +1,4 @@
 import Image from "next/image";
-import propertyImg from "../public/assets/projects/property.jpg";
 import Link from "next/link";
 
 const ProjectItem = ({title, backgroundImg, projectUrl}) => {
