@@ -1,10 +1,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import {AiOutlineClose, AiOutlineMail, AiOutlineMenu} from 'react-icons/ai';
-import {FaGithub, FaLinkedinIn} from 'react-icons/fa';
-import {BsFillPersonLinesFill} from 'react-icons/bs';
 import {useEffect, useState} from 'react';
 import navLogo from '../public/assets/navLogo.png'
+import {EXTERNAL_LINKS} from "../externalLinks";
 
 const NAV_LINKS = [
   {
@@ -98,26 +97,11 @@ const Navbar = () => {
             <div className="pt-40">
               <p className="uppercase tracking-widest text-[#5651e5]">Let&apos;s Connect</p>
               <ul className="flex items-center justify-between my-4 w-full sm:w-[80%]">
-                <li
-                  className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-500"
-                >
-                  <FaLinkedinIn/>
-                </li>
-                <li
-                  className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-500"
-                >
-                  <FaGithub/>
-                </li>
-                <li
-                  className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-500"
-                >
-                  <AiOutlineMail/>
-                </li>
-                <li
-                  className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-500"
-                >
-                  <BsFillPersonLinesFill/>
-                </li>
+                {EXTERNAL_LINKS.map((exLink) => (
+                  <li key={exLink.linkUrl}>
+                    <a href={exLink.linkUrl} className="inline-block rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-500" >{exLink.icon}</a>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
