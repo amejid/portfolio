@@ -4,6 +4,7 @@ import {AiOutlineClose, AiOutlineMail, AiOutlineMenu} from 'react-icons/ai';
 import {FaGithub, FaLinkedinIn} from 'react-icons/fa';
 import {BsFillPersonLinesFill} from 'react-icons/bs';
 import {useEffect, useState} from 'react';
+import navLogo from '../public/assets/navLogo.png'
 
 const NAV_LINKS = [
   {
@@ -51,7 +52,7 @@ const Navbar = () => {
     <header className={shadow ? 'fixed bg-[#ecf0f3] w-full h-20 shadow-xl z-[100]' : 'fixed w-full h-20 z-[100]'}>
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Link href="/">
-          <Image src="/../public/assets/navLogo.png" alt="" width="125" height="50"/>
+          <Image src={navLogo} alt="" width="125" height="50"/>
         </Link>
         <nav>
           <ul className="hidden md:flex">
@@ -74,7 +75,7 @@ const Navbar = () => {
           <div>
             <div className="flex w-full items-center justify-between">
               <Link onClick={() => setNav(false)} href="/">
-                <Image src="/../public/assets/navLogo.png" alt="/" width="87" height="35"/>
+                <Image src={navLogo} alt="/" width="87" height="35"/>
               </Link>
               <div onClick={handleNav} className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer">
                 <AiOutlineClose/>

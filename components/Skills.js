@@ -1,36 +1,45 @@
+import reactLogo from '../public/assets/skills/react.png';
+import reduxLogo from '../public/assets/skills/redux.png';
+import tailwindLogo from '../public/assets/skills/tailwind.png';
+import graphLogo from '../public/assets/skills/graphql.png';
+import railsLogo from '../public/assets/skills/rails.png';
+import postLogo from '../public/assets/skills/postgresql.png';
+import nodeLogo from '../public/assets/skills/node.png';
+import mongoLogo from '../public/assets/skills/mongo.png';
+
 import SkillItem from './SkillItem';
 
 const SKILLS = [
   {
-    imageUrl: 'react.png',
+    imageUrl: reactLogo,
     title: 'React',
   },
   {
-    imageUrl: 'redux.png',
+    imageUrl: reduxLogo,
     title: 'Redux',
   },
   {
-    imageUrl: 'tailwind.png',
+    imageUrl: tailwindLogo,
     title: 'Tailwind',
   },
   {
-    imageUrl: 'graphql.png',
+    imageUrl: graphLogo,
     title: 'GraphQL',
   },
   {
-    imageUrl: 'rails.png',
+    imageUrl: railsLogo,
     title: 'Ruby on Rails',
   },
   {
-    imageUrl: 'postgresql.png',
+    imageUrl: postLogo,
     title: 'PostgreSQL',
   },
   {
-    imageUrl: 'node.png',
+    imageUrl: nodeLogo,
     title: 'Node',
   },
   {
-    imageUrl: 'mongo.png',
+    imageUrl: mongoLogo,
     title: 'MongoDB',
   },
 ];
