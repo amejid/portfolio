@@ -1,8 +1,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import {AiOutlineClose, AiOutlineMail, AiOutlineMenu} from 'react-icons/ai';
+import {AiOutlineClose, AiOutlineMenu} from 'react-icons/ai';
 import {useEffect, useState} from 'react';
-import navLogo from '../public/assets/navLogo.png'
+import navLogo from '../public/assets/navLogo.png';
+// import myCV from '../public/assets/cv/Resume.pdf';
 import {EXTERNAL_LINKS} from "../externalLinks";
 
 const NAV_LINKS = [
