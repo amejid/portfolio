@@ -3,7 +3,6 @@ import Link from 'next/link';
 import {AiOutlineClose, AiOutlineMenu} from 'react-icons/ai';
 import {useEffect, useState} from 'react';
 import navLogo from '../public/assets/navLogo.png';
-// import myCV from '../public/assets/cv/Resume.pdf';
 import {EXTERNAL_LINKS} from "../externalLinks";
 
 const NAV_LINKS = [
@@ -100,7 +99,7 @@ const Navbar = () => {
               <ul className="flex items-center justify-between my-4 w-full sm:w-[80%]">
                 {EXTERNAL_LINKS.map((exLink) => (
                   <li key={exLink.linkUrl}>
-                    <a href={exLink.linkUrl} className="inline-block rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-500" >{exLink.icon}</a>
+                    <a href={exLink.linkUrl} target="_blank" rel="noreferrer" className="inline-block rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-500" >{exLink.icon}</a>
                   </li>
                 ))}
               </ul>

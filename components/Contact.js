@@ -58,7 +58,7 @@ const Contact = () => {
                 <ul className="flex items-center justify-between max-w-[330px] m-auto py-4">
                   {EXTERNAL_LINKS.map((exLink) => (
                     <li key={exLink.linkUrl}>
-                      <a href={exLink.linkUrl}
+                      <a href={exLink.linkUrl} target="_blank" rel="noreferrer"
                          className="inline-block rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-500">{exLink.icon}</a>
                     </li>
                   ))}
